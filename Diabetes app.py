@@ -4,7 +4,7 @@ import joblib
 import streamlit as st
 #Load the Model
 
-model=joblib.load(open("logistic_regression_model(1).joblib", 'rb'))
+model=joblib.load(open("logistic_regression_model (1).joblib", 'rb'))
 
 st.title("Diabetes app")
 #Input feature
