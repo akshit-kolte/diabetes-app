@@ -10,7 +10,7 @@ st.title("Diabetes Prediction app")
 #Input feature
 Age=st.number_input("Age of the person",min_value=0.0)
 BMI=st.number_input("BMI",min_value=0.0)
-BloodPressure=st.number_input("Newspaper Adv Budget",min_value=0.0)
+BloodPressure=st.number_input("BloodPressure",min_value=0.0)
 Insulin=st.number_input("Insulin",min_value=0.0)
 Glucose=st.number_input("Glucose",min_value=0.0)
 SkinThickness=st.number_input("SkinThickness",min_value=0.0)
