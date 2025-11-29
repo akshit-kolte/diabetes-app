@@ -20,5 +20,5 @@ Age=st.number_input("Age",min_value=0.0)
 #Make Pred
 if st.button('Predict Diabetes'):
 	input_data=np.array([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
-	prediction=model.predict(input_data)[0]
+	prediction=model.Predict(input_data)[0]
 	st.success(f'Predict Diabetes:{prediction:.2f}')
