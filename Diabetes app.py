@@ -12,11 +12,11 @@ BloodPressure=st.number_input("BloodPressure", min_value=0.0)
 Insulin=st.number_input("Insulin", min_value=0.0)
 Glucose=st.number_input("Glucose", min_value=0.0)
 SkinThickness=st.number_input("SkinThickness", min_value=0.0)
-DiabetesPedigreeFunction=st.number_input("Diabetes Pedigree Function", min_value=0.0)
+DiabetesPedigreeFunction=st.number_input("DiabetesPedigreeFunction", min_value=0.0)
 Pregnancies=st.number_input("Pregnancies", min_value=0.0)
 #Make Pred
 if st.button('Diabetes Prediction'):
-   input_data=np.array([[Age, BMI, BloodPressure, Insulin, Glucose, SkinThickness, Diabetes Pedigree Function, Pregnancies]])
+   input_data=np.array([[Age, BMI, BloodPressure, Insulin, Glucose, SkinThickness, DiabetesPedigreeFunction, Pregnancies]])
    prediction=model.predict(input_data)[0]
    st.success (f'Predict Diabetes: {prediction:.2f}')
 
