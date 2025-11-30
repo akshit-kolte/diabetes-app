@@ -20,7 +20,7 @@ if st.button('Diabetes Prediction'):
     input_data_df = pd.DataFrame([[Age, BMI, BloodPressure, Insulin, Glucose, SkinThickness, DiabetesPedigreeFunction, Pregnancies]], 
                                  columns=['Age', 'BMI', 'BloodPressure', 'Insulin', 'Glucose', 'SkinThickness', 'DiabetesPedigreeFunction', 'Pregnancies'])
     
-    prediction=model.predict(input_data_df)
+    prediction=model.Predict(input_data_df)
     st.success (f'Predict Diabetes: {prediction[0]}')
 
 
