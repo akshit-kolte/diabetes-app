@@ -19,6 +19,6 @@ Pregnancies=st.number_input("Pregnancies",min_value=0.0)
 
 #Make Pred
 if st.button('Diabetes Prediction'):
-	input_data=np.array([[Age, BMI, BloodPressure, Insulin, Glucose, SkinThickness, DiabetesPedigreeFunction, Pregnancies]])
-	prediction=model.predict(input_data)[0]
-	st.success(f'Predict Diabetes:{prediction:.2f}')
+	 input_data=np.array([[Age, BMI, BloodPressure, Insulin, Glucose, SkinThickness, DiabetesPedigreeFunction, Pregnancies]])
+	 prediction=model.predict(input_data)[0]
+	 st.success(f'Predict Diabetes:{prediction:.2f}')
