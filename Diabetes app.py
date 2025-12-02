@@ -20,5 +20,5 @@ if st.button('Diabetes Prediction'):
                             SkinThickness, DiabetesPedigreeFunction, Pregnancies]])
 
     prediction = model.predict(input_data)[0]
-    st.success(f'Predicted Diabetes: {prediction}') .
+    st.success(f'Predicted Diabetes: {prediction_model}') .
 
