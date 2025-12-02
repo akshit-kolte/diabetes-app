@@ -13,7 +13,7 @@ SkinThickness=st.number_input("SkinThickness", min_value=0.0)
 Insulin=st.number_input("Insulin", min_value=0.0)
 BMI=st.number_input("BMI", min_value=0.0)
 DiabetesPedigreeFunction=st.number_input("DiabetesPedigreeFunction", min_value=0.0)
-Age=st.number_input("Pregnancies", min_value=0.0)
+Age=st.number_input("Age", min_value=0.0)
 #Make Pred
 if st.button('Diabetes Prediction'):
     input_data = pd.DataFrame([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
