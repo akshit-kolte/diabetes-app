@@ -6,7 +6,7 @@ import streamlit as st
 model=joblib.load(open("logistic_regression_model (1).joblib", 'rb'))
 st.title("Diabetes Prediction app")
 #Input feature
-Age=st.number_input("Age of the person", min_value=0.0)
+Age=st.number_input("Age", min_value=0.0)
 BMI=st.number_input("BMI", min_value=0.0)
 BloodPressure=st.number_input("BloodPressure", min_value=0.0)
 Insulin=st.number_input("Insulin", min_value=0.0)
